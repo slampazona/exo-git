@@ -2,6 +2,8 @@
 
 Pour commencer, regarder la page `Insight > Network` permet de se faire une bonne idée de l'état actuel de l'espace de travail.
 
+![Network](docs/network_git.png)
+
 ## Régler les conflit
 
 ### La terre le vent et le feu
