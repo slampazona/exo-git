@@ -32,6 +32,60 @@ Sauf que le partage des tâches n'a pas été bien fait. Résultat ils se sont t
   1. Rappatrier la branche en local PUIS récupérer les changements `git merge origin/henriette`
 
 </details>
+<details>
+<summary>Pour régler les conflits</summary>
+
+Si vous avez ce style de message : 
+
+```
+Fusion automatique de playlist.md
+CONFLIT (contenu) : Conflit de fusion dans playlist.md
+La fusion automatique a échoué ; réglez les conflits et validez le résultat.
+```
+
+C'est que vous avez un conflit à régler, en gros la branche où vous êtes actuellement et la branche que vous tentez de merger, on fait une modification au même endroit sur le même fichier. Git ne sachant pas laquelle des 2 modification il faut garder, il vous demande donc de choisir.
+
+Si on fait un git status, on a l'inventaire de ce qui a été modifié des 2 cotés
+
+```
+Vous avez des chemins non fusionnés.
+  (réglez les conflits puis lancez "git commit")
+  (utilisez "git merge --abort" pour annuler la fusion)
+
+Chemins non fusionnés :
+  (utilisez "git add <fichier>..." pour marquer comme résolu)
+
+        modifié des deux côtés :  playlist.md
+
+aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")
+```
+
+Ici on voit `modifié des deux côtés :  playlist.md` , il faut donc aller voir ce fichier et la on s'appercoit de ceci : 
+
+![Network](docs/conflict_resolving.png)
+
+On s'appercoit que la branche précédemment mergée ( celle d'henriette ) avait dit que `Earth, Wind & Fire - September` était du Disco, et on voit que Michel a mis la même chanson mais en disant que c'était du Funk.
+
+Un choix s'offre à nous, sachant que `Earth, Wind & Fire - September` c'est clairement pas du disco, on va garder la version de michel du coups on modifie le fichier : 
+
+```
+<<<<<<< HEAD
+|[Earth, Wind & Fire - September](https://www.youtube.com/watch?v=Gs069dndIYk)| Disco |
+=======
+|[Earth, Wind & Fire - September](https://www.youtube.com/watch?v=Gs069dndIYk)| Funk |
+>>>>>>> michel
+
+Devient alors :
+
+|[Earth, Wind & Fire - September](https://www.youtube.com/watch?v=Gs069dndIYk)| Funk |
+
+```
+
+On supprime les caractères chelou, ainsi que la version qui ne nous intéresse pas.
+
+Puis on fait un `git add .` pour suivre la modification de résolution de conflit, on commit `git commit -m "Merge de michel dans master"` et enfin on peut push si on le veut `git push origin master`
+
+</details>
 
 
 ## Rebase une branche
