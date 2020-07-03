@@ -8,6 +8,8 @@
 |[James Brown - People Get Up And Drive Your Funky Soul](https://www.youtube.com/watch?v=h0chqsOCQDI)| Soul Funk |
 |[Mark Ronson  ft. Bruno Mars - Uptown Funk](https://www.youtube.com/watch?v=OPf0YbXqDm0)| Pop Funk |
 |[Earth, Wind & Fire - September](https://www.youtube.com/watch?v=Gs069dndIYk)| Funk |
+|[Jackson 5 - ABC](https://www.youtube.com/watch?v=Vnrzn4EZgzE)| Funk |
+
 
 ## Du Hip Hop !
 
