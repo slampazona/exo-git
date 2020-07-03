@@ -9,6 +9,7 @@
 |[Mark Ronson  ft. Bruno Mars - Uptown Funk](https://www.youtube.com/watch?v=OPf0YbXqDm0)| Pop Funk |
 |[Earth, Wind & Fire - September](https://www.youtube.com/watch?v=Gs069dndIYk)| Funk |
 |[Jackson 5 - ABC](https://www.youtube.com/watch?v=Vnrzn4EZgzE)| Funk |
+|[The Whispers - And The Beat Goes On](https://www.youtube.com/watch?v=fOaxEa5ONJw)| Funk |
 
 
 ## Du Hip Hop !
@@ -26,6 +27,8 @@
 |[T. Rex - Get It On](https://www.youtube.com/watch?v=wZkTh_T75QY) | Glam Rock |
 |[Elvis Presley - Jailhouse Rock](https://www.youtube.com/watch?v=PpsUOOfb-vE) | Rock n roll |
 |[Toto - Hold The Line](https://www.youtube.com/watch?v=htgr3pvBr-I) | Pop Rock |
+|[Queen - Bohemian Rhapsody](https://www.youtube.com/watch?v=fJ9rUzIMcZQ) | Rock |
+|[Led Zeppelin - Stairway To Heaven](https://www.youtube.com/watch?v=Nnu1E5Kslig) | Pop Rock |
 
 ## Du Metal !
 
