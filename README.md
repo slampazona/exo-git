@@ -66,7 +66,7 @@ Ici on voit `modifié des deux côtés :  playlist.md` , il faut donc aller voir
 
 On s'appercoit que la branche précédemment mergée ( celle d'henriette ) avait dit que `Earth, Wind & Fire - September` était du Disco, et on voit que Michel a mis la même chanson mais en disant que c'était du Funk.
 
-Un choix s'offre à nous, sachant que `Earth, Wind & Fire - September` c'est clairement pas du disco, on va garder la version de michel du coups on modifie le fichier : 
+Un choix s'offre à nous, sachant que `Earth, Wind & Fire - September` c'est clairement pas du disco, on va garder la version de Michou ! Du coups on modifie le fichier : 
 
 ```
 <<<<<<< HEAD
@@ -74,11 +74,10 @@ Un choix s'offre à nous, sachant que `Earth, Wind & Fire - September` c'est cla
 =======
 |[Earth, Wind & Fire - September](https://www.youtube.com/watch?v=Gs069dndIYk)| Funk |
 >>>>>>> michel
-
+```
 Devient alors :
-
+```
 |[Earth, Wind & Fire - September](https://www.youtube.com/watch?v=Gs069dndIYk)| Funk |
-
 ```
 
 On supprime les caractères chelou, ainsi que la version qui ne nous intéresse pas.
