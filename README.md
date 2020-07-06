@@ -121,8 +121,21 @@ Pour être sûr :
 
 2. Taper `git rebase -i id_du_commit_copié`.
    ex : `git rebase -i 81b6f96fc87380b80582559cff08ca648f92c5cd`
-3. Dans l'éditeur qui s'ouvre (nano, vm, ...), laisser `pick` pour le premier commit de la liste et remplacer le reste par `squash`. Sauver + quitter  
-`<Todo: screenshot + erreurs communes>`
+3. Dans l'éditeur qui s'ouvre (nano, vm, ...)
+
+![Network](docs/gitrebase-i.png)
+
+Laisser `pick` pour le premier commit de la liste et remplacer le reste par `squash`. Sauver + quitter  
+
+Si vous avez une erreur du style : 
+```
+error: 'squash' impossible avec le commit précédent
+Vous pouvez corriger ceci avec 'git rebase --edit-todo' puis lancez 'git rebase --continue'.
+Ou vous pouvez abandonner le rebasage avec 'git rebase --abort'.
+```
+C'est que vous vous êtes trompé en mettant par exemple squash sur le premier commit.
+Pour corriger éxecutez la commande : `git rebase --edit-todo`, modifiez et une fois le problème réglé, éxecutez la commande : `git rebase --continue`
+
 4. Dans le 2ème éditeur, on choisit le commentaire du nouveau "méga-commit". Normalement il est déjà constitué d'un assemblage des commentaires des "petits commits" (pratique !). Sauver + quitter  
 5. `git log` pour vérifier. :tada:
 
