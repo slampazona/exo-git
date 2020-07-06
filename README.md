@@ -89,6 +89,8 @@ Puis on fait un `git add .` pour suivre la modification de résolution de confli
 
 ## Rebase une branche
 
+![Network](docs/gitrebase.gif)
+
 ### Cacher la poussière sous le tapis
 
 1. Crée une nouvelle branche qui s'appelle comme toi (sauf si tu t'appelle Michel, tu peux l'appeler `michel_2`)
@@ -109,8 +111,16 @@ C'est très pratique pour travailler en "step by step", et pouvoir quand même p
 #### Et on fait comment ?
 
 1. D'abord identifier le commit _qui précède_ notre premier commit de travail. Copier son id.  
-`<TODO : insert screenshot>`
+
+Pour le visualiser : 
+![Network](docs/commit_find_id.png)
+
+Pour être sûr : 
+
+![Network](docs/git_log.png)
+
 2. Taper `git rebase -i id_du_commit_copié`.
+   ex : `git rebase -i 81b6f96fc87380b80582559cff08ca648f92c5cd`
 3. Dans l'éditeur qui s'ouvre (nano, vm, ...), laisser `pick` pour le premier commit de la liste et remplacer le reste par `squash`. Sauver + quitter  
 `<Todo: screenshot + erreurs communes>`
 4. Dans le 2ème éditeur, on choisit le commentaire du nouveau "méga-commit". Normalement il est déjà constitué d'un assemblage des commentaires des "petits commits" (pratique !). Sauver + quitter  
